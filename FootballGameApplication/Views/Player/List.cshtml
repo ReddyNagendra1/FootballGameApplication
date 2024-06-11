@@ -1,0 +1,15 @@
+﻿@model IEnumerable<FootballGameApplication.Models.PlayerDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+
+@foreach (var player in Model)
+{
+            <h2><a href="/Player/Details/@player.PlayerID"<@player.PlayerID</h2>
+            <div>@player.PlayerName</div>
+            <div>@player.DateOfBirth</div>
+            <div>@player.TeamName</div>
+}

@@ -23,6 +23,12 @@ namespace FootballGameApplication.Models
         //
         public ICollection<Venue> Venues { get; set; }
 
-
+    }
+    public class PlayerDto
+    {
+        public int PlayerID { get; set; }
+        public string PlayerName { get; set; }
+        public DateTime DateOfBirth { get; set; }
+        public string TeamName { get; set; }
     }
 }
